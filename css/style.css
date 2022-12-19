@@ -212,7 +212,298 @@ body {
 }
 
 
+.header-top {
+    background: url(../images/header__top-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 130px 0 0;
+}
+.header-top__inner {
+    display: flex;
+    justify-content: space-between;
+}
+.header-top__info {
+    max-width: 480px;
+}
+.header-top__title {
+    font-weight: 700;
+    font-size: 44px;
+    color: #fff;
+}
+.header-top__title span {
+    margin-top: 15px;
+    font-size: 34px;
+    margin-bottom: 30px;
+}
 
+.header-top__descr {
+    font-weight: bold;
+    font-size: 18px;
+    color: #fff;
+    background-color: #1d5493;
+    padding: 14px 13px;
+
+}
+.header-top__list {
+    margin-top: 40px;
+    list-style-type: none;
+    padding-left: 25px;
+}
+.header-top__list-item {
+    font-weight: bold;
+    line-height: 24px;
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 30px;
+    position: relative;
+}
+.header-top__item--circle:before {
+    content: '';
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    top: 5px;
+    left: -25px;
+    background-image: url('../images/icons/circle.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.header-top__item--circlesecond:before {
+    content: '';
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    top: 20px;
+    left: -25px;
+    background-image: url('../images/icons/circle.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.header-top__list-item span {
+    color: #ffba00;
+    font-size: 24px;
+}
+.header-top__image {
+    max-width: 311px;
+    background-size: cover;
+    margin-bottom: -4px;
+}
+.header-top__form {
+    max-width: 450px;
+    border-radius: 4px;
+    border-top: 11px solid #73a3c8;
+    border-bottom: 11px solid #ffba00;
+    margin-bottom: 60px;
+    padding: 20px 25px;
+    background-color: #fff;
+}
+.header-top__form-buttons {
+    width: 100%;
+    display: flex;
+    font-size: 18px;
+    justify-content: space-around;
+    margin-bottom: 15px;
+}
+.header-top__form-tabs {
+    background: transparent;
+    color: #1d5493;
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+    border-bottom: 1px solid #1d5493;
+    border-bottom-style: dashed;
+}
+.header-top__form-tabs--active {
+    padding: 8px 15px;
+    color: #000;
+    background-color: #ffba00;
+    border-bottom: none;
+}
+
+.header-top__form-input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+    margin-bottom: 17px;
+    border: 1px solid #9e9e9e;
+    outline: none;
+}
+.header-top__form-input::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    color: #2f3338;
+}
+.header-top__form-settings {
+    display: flex;
+    justify-content: space-between;
+}
+.header-top__form-settings select {
+    border-radius: 20px;
+    font-weight: 400;
+    padding: 10px;
+    font-size: 16px;
+    color: #2f3338;
+    border-color: #9e9e9e;
+}
+.header-top__form-list {
+    margin-bottom: 17px;
+    width: 100%;
+    margin-right: 10px;
+}
+.header-top__form-setinput {
+    padding: 10px;
+    border-radius: 20px;
+    margin-bottom: 17px;
+    border: 1px solid #9e9e9e;
+    outline: none;
+}
+.header-top__form-radiobtn {
+    margin-top: 40px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #2f3338;
+}
+.header-top__form-checkbox input[type="radio"] {
+    display: none;
+}
+
+.header-top__form-checkbox label {
+    display: inline-block;
+    padding: 2px 2px;
+    cursor: pointer;
+    margin-right: 25px;
+}
+
+.header-top__form-checkbox input[type="radio"]:checked+label {
+    border-bottom: 1px dashed #000;
+}
+
+.header-top__form-checkboxinner {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+
+.header-top__form-checkboxtext {
+    margin: 0;
+    margin-right: 20px;
+}
+
+.header-top__form-price {
+    margin-top: 45px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #2f3338;
+    text-align: center;
+}
+.header-top__form-price span {
+    font-size: 36px;
+    margin-left: 35px;
+    padding-right: 20px;
+    position: relative;
+}
+.header-top__form-price span:after {
+    content: "Р";
+    position: absolute;
+    top: 30%;
+    right: 0;
+    font-size: 22px;
+    font-weight: 400;
+    text-decoration:line-through;
+}
+.header-top__form-btn {
+    display: block;
+    max-width: 285px;
+    margin: 20px auto 0;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 20px 100px;
+    background-color: #ffba00;
+    color: #303539;
+    font-size: 14px;
+    font-weight: bold;
+    box-shadow: 0px 5px 20px 0px rgba(125, 92, 4, 0.8);
+    border-radius: 5px;
+    transition: all .3s;
+}
+.header-top__form-btn:hover {
+    box-shadow: none;
+}
+
+.info {
+    background-color: #d9e0e6;
+    padding: 90px 0 50px;
+    color: #303539;
+}
+.info__title {
+    font-size: 30px;
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+.info__inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.info__item {
+    font-size: 14px;
+    padding-left: 60px;
+    margin-bottom: 50px;
+}
+.info__item-title {
+    font-weight: bold;
+    margin-bottom: 20px;
+    position: relative;
+}
+.info__item-text {
+    font-weight: 400;
+    max-width: 205px;
+    position: relative;
+}
+.info__item--easy:before {
+    content: "";
+    position: absolute;
+    width: 35px;
+    height: 53px;
+    top: -59px;
+    left: -58px;
+    background-image: url('../images/icons/info-1.png');
+}
+.info__item--time:before {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 38px;
+    top: -47px;
+    left: -62px;
+    background-image: url('../images/icons/info-2.png');
+}
+.info__item--security:before {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: -54px;
+    left: -53px;
+    background-image: url('../images/icons/info-3.png');
+}
+.info__item-textmod {
+    text-decoration:underline;
+}
+.info__text {
+    max-width: 550px;
+}
+.info__text-item {
+    margin-bottom: 20px;
+}
+.info__text-item:last-child {
+    margin-bottom: 0;
+}
 
 
 

@@ -45,18 +45,160 @@
             </div>
         </header>
         <main class="main">
-            <section class="header__top">
-                <div class="container"></div>
+            <section class="header-top">
+                <div class="container">
+                    <div class="header-top__inner">
+                        <div class="header-top__info">
+                            <h2 class="header-top__title">Курьерская доставка
+                                <span>по Краснодарскому краю</span>
+                            </h2>
+                            <span class="header-top__descr">Заберём и доставим в любое время</span>
+                            <ul class="header-top__list">
+                                <li class="header-top__list-item header-top__item--circle"><span>11460</span> доставок
+                                </li>
+                                <li class="header-top__list-item header-top__item--circlesecond">Среднее время прибытия
+                                    курьера<br><span>до 2х часов</span></li>
+                                <li class="header-top__list-item header-top__item--circle"><span>980</span> активных
+                                    курьеров</li>
+                            </ul>
+                            <img class="header-top__image" src="images/header-top__img.png" alt="image">
+                        </div>
+                        <form class="header-top__form" action="#">
+                            <div class="header-top__form-buttons">
+                                <button class="header-top__form-tabs header-top__form-tabs--active" id="tab-1"
+                                    type="submit">Рассчитать</button>
+                                <button class="header-top__form-tabs" id="tab-2" type="submit">Отследить</button>
+                            </div>
+                            <div class="header-top__form-content header-top__form-content--active" id="#tab-1">
+                                <input class="header-top__form-input" type="text" placeholder="Отправитель">
+                                <input class="header-top__form-input" type="text" placeholder="Номер телефона">
+                                <div class="header-top__form-settings">
+                                    <select class="header-top__form-list">
+                                        <option value="1">Конверт А4</option>
+                                        <option value="2">Конверт А3</option>
+                                        <option value="3">Конверт А2</option>
+                                    </select>
+                                    <input class="header-top__form-setinput" type="text" placeholder="Откуда">
+                                </div>
+                                <div class="header-top__form-settings">
+                                    <select class="header-top__form-list">
+                                        <option value="1">0.4кг</option>
+                                        <option value="2">0.8кг</option>
+                                        <option value="3">1.2кг</option>
+                                    </select>
+                                    <input class="header-top__form-setinput" type="text" placeholder="Куда">
+                                </div>
+                                <div class="header-top__form-radiobtn">
+                                    <div class="header-top__form-checkbox">
+                                        <div class="header-top__form-checkboxinner">
+                                            <input type="radio" id="radio1" name="radios" value="Обычная" checked>
+                                            <label for="radio1">Обычная</label>
+
+                                            <input type="radio" id="radio2" name="radios" value="Ускоренная доставка">
+                                            <label for="radio2">Ускоренная доставка</label>
+                                        </div>
+                                        <div class="header-top__form-checkboxinner">
+                                            <p class="header-top__form-checkboxtext">Страховка:</p>
+                                            <input type="radio" id="radio0" name="checkbox" value="ДА" checked>
+                                            <label for="radio0">ДА</label>
+
+                                            <input type="radio" id="radio" name="checkbox" value="НЕТ">
+                                            <label for="radio">НЕТ</label>
+                                        </div>
+                                        <div class="header-top__form-checkboxinner">
+                                            <p class="header-top__form-checkboxtext">Объявленная ценность:</p>
+                                            <input type="radio" id="radio3" name="radio" value="Стандатный" checked>
+                                            <label for="radio3">ДА</label>
+
+                                            <input type="radio" id="radio4" name="radio" value="Морозостойкий">
+                                            <label for="radio4">НЕТ</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="header-top__form-price">
+                                    Итого
+                                    <span>99 999</span>
+                                </p>
+                                <a class="header-top__form-btn" href="#">Отправить</a>
+                            </div>
+                            <div class="header-top__form-content" id="#tab-2">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+            <section class="info">
+                <div class="container">
+                    <h2 class="info__title">
+                        Быстро и удобно для отправителя и получателя
+                    </h2>
+                    <div class="info__inner">
+                        <div class="info__items">
+                            <div class="info__item">
+                                <h4 class="info__item-title">Все очень просто</h4>
+                                <p class="info__item-text info__item--easy">
+                                    <span class="info__item-textmod">Оставляете заявку на сайте</span>,
+                                    Вам звонит менеджер, приезжает
+                                    курьер, осуществляется доставка
+                                    и передача посылки.
+                                </p>
+                            </div>
+                            <div class="info__item">
+                                <h4 class="info__item-title">Быстрая доставка</h4>
+                                <p class="info__item-text info__item--time">
+                                    <span class="info__item-textmod">Оставляете заявку на сайте</span>,
+                                    Время доставки по Краснодару
+                                    в час пик до 2х часов.
+                                </p>
+                            </div>
+                            <div class="info__item">
+                                <h4 class="info__item-title">Страховка</h4>
+                                <p class="info__item-text info__item--security">
+                                    <span class="info__item-textmod">Оставляете заявку на сайте</span>,
+                                    Выплата компенсаций
+                                    при подтвержденной утере
+                                    или повреждении
+                                    отправления.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="info__text">
+                            <p class="info__text-item">
+                                Служба экспресс-доставки оказывает широкий спектр курьерских услуг:
+                            </p>
+                            <p class="info__text-item">
+                                доставка документов. Эта услуга востребована в области бизнеса и государственного
+                                документооборота. Она позволяет осуществлять быструю доставку важных писем, договоров,
+                                счетов и другой срочной документации;<br>
+                                доставка посылок. Перевозим грузы практически любых категорий весом от 5 кг. Гарантируем
+                                качественную упаковку и бережное отношение на всех этапах экспресс-доставки. Перевозка
+                                возможна как по схеме «от двери до двери», так и между офисами нашей курьерской службы в
+                                городах РФ;<br>
+                                возврат документов. Эта услуга экспресс-почты позволяет пересылать возвратные
+                                отправления от грузополучателей в пределах Краснодара или в другие города страны;
+                                курьерская доставка день в день. Мы можем доставить ваши документы или посылку внутри
+                                города в течение нескольких часов;<br>
+                                уведомление об экспресс-доставке почты или грузов. Оно может осуществляться по
+                                электронной почте, в «Личном кабинете» на сайте, по SMS, а также официальным письмом;<br>
+                                упаковка. Мы располагаем большим выбором конвертов, сейф-пакетов и других упаковочных
+                                материалов для надежной, безопасной и конфиденциальной доставки. <br>
+                                Компания City Express гарантирует надежную и быструю доставку грузов точно в срок. Мы
+                                работаем на рынке доставки и логистики более 25 лет, располагаем собственной сетью
+                                филиалов по всей России, предлагаем гибкие финансовые условия сотрудничества.
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </section>
         </main>
-    
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
+
         <footer class="footer">
             <div class="container">
                 <div class="footer__inner">
@@ -88,14 +230,23 @@
                         </div>
                         <div class="footer__social-box">
                             <ul class="footer__social">
-                                <li class="footer__social-item"><a class="footer__social-link" href="#"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="37" height="38" viewBox="0 0 37 38">
-                                    <image id="social-media-logos-white-png-2" width="37" height="38" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACUAAAAmCAYAAABDClKtAAABv0lEQVRYhe2YPUvDQBiAn2hrFerXoi7tIuJfEBwFEVztooijIIIOTv4Il3YS3HTyD4ijm5u6SB0FEcShgrValcrZi6R5+5Hk2jRIHyhJ37s0T3OX997ESq1kK0SLfEzrfAOvXVZLAINAyZa6AZZEt3DZAfbVGW2pMvDUDZP70+3fbTqTe7FjfXprid7h0++WihSxNsksAstAChhxXP08sCV6t8BUSt0tR8CqaKkyKSIeMB2+vSZCipKIdFhK5ZV1Ea1lWEQ8YDJ8Y8CUiMI5cKH3H0Vrh6WsOle6AKwBz6K3D9qdEsp6yTLCROpdRKp8iohPggyfmtwbeqIPudrGgTPgQ//ha2BX/EILgkjNAgsiWiUOzDu+F0UPDwQZvrKINOauYUsTgkglRKQxoaWEY+AKGAWyeqmxKeg5VNQp41Ic3SGpW/1JAgcuKXVHngBf4igfmKSEZJ06zAq6tDiJZD3Vk/JKT8orPSmv/DspSydQJ/USqm9MymH1mL0JDDhib0HLFScmUkrgUETbQKTnlHGx3wb+an57+Cb0o1HopDM5+5RzbqlpXbxFgbiSetAi3X5HZb97fVBSM12WqQUqP0ObO90vznxtAAAAAElFTkSuQmCC"/>
-                                  </svg>
-                                  </a></li>
-                                <li class="footer__social-item"><a class="footer__social-link" href="#"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="96" height="38" viewBox="0 0 96 38">
-                                    <image id="social-media-logos-white-png-2_копия" data-name="social-media-logos-white-png-2 копия" width="96" height="38" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAAAmCAYAAAA7mZ5JAAAFK0lEQVRoge2be4gVVRzHP3fdcrUStpc92Moik17SA6SHlWYFW9hLspQsiaAi0iyodqMsav+wco0KIYssKqInRUVL2gsT7G0SFLQuVvTQDbGXWu1uHO534uw5M3Nn7r07d5a9H7jM3HPOnXPm/Ob8XmduoWXWQ4+RL74D7q7yiFqAO73S2nOXEcBAzgb1LXC4V1oZJwCfZH0jCTixUW22Au/XeDATgSOBP7yayumzrvAO8FtWNxXCOGC6ivsCAXwNXOi3zZSbgPsz6PBqYKNXmh2HAt1Bbw06jqrhgAJ29UqGhrE1uDebQf03eNV1MqUxZWfjgT10nsR4F4CdwBZgh1dbJ5EAxgDXAJcBh+l7Gv6RALqATnk5dUQpARwAvACc7NUkZ4ws/3XAbOBK4PW6AIrECcAYxeesye8F3lOglDR26Af2BKYARwN76ZqnAOu91iOQOAHMBabq/EPgcqDHa5WcDuA2YDfgXuC8kT75lPCC5uj4u9RGOZNvVM5nwO1Am4Igw5nAwV7rfNNgfapG1ApoAibofH0Jw9msyTQq60fgB6tuMTAJOA64D3hJUWCTDPom72rZcwxwvNSqmdztslF/aiRGXS4DdlGbgtosBNY5oz0X2F+Rd0Ht1wLfRN1VlABG62P4xast0iKVcr6MNVotpsMletqfAG4B3pI31Gv9fnfvirXBrPRbnZ4fAa7X+UZFrrOdNq2OAM6OcC6M8G70SkWS5VTwSorJrTXAtdbkoxjhHGCVOl2iFTBXBtkWeF6SgCv04NjMt1TkT7JfLu74F3otiivhKa/Uohx9to9UyUH6vkGp3puB11RmhLYUmKkYIM+YJ3ylM76xzoRuCwkkbQGcqhXg8jDwuVdaoQAWWE/H08BJyt8/IHU038o+dliqLM90Wjo/wASfk63v/U59IICCvDo3n/YF0F7qntMKwBiii3Teo+DKHfhK6X7DUTJweafHGnOAcRQetOapKeIezCSf5pSZlPoVIXPjkVYAewMH6vztEN0Z8KJ1foRXm086QtTl6TKiV4XM1QwZ6sVO+YDU15dJ7jLKCxqJGGN7B7DcufcFEXMx1QpUbT4AHvdKI0i7Anrl6xvOinElZ1nnkT5wDnlUHlwlmDhg36ESgPHlX9b5BPnL7gbHPBliw1eKhIcL/TK+vRWM12ytvmmp6ljK8YKWWRHsPAVe7fL7XwGetDyCNu0HDCe6lXr/u8SYja5/N8IOmjjpDWA/r8ahHAEYQ3WxsqLIVbtHfv8F1uAWWXHBcGOVko9xXsxapVVaFSe4TFbmN9YNTyKAsIj1UwUfyy2bgJ6GLnkInd6vBvvSYRF2nngemBbztsgGHdcoTREmLONF3eCVWkR5QTst1THeqy3yveKA9phknIu9JIfi9ZNq8zFwhrK3rUrcNcsWvmr11aU2bdL9A1YyLtaeRAlgh4ITk7E8Vsdur1WRrfokYaZ1/ajr5ZHV+sSxTpmAVMSpoGd1HKco8RCvRXJGK1yfpl+szkkquuZErQDDM3Ing4DjI1n9TdYSK0W/tiGnaPkiXVkyRzJSiBOAccMutTblTRb0Eq9VOn7V7lp9P1jECQAZ1RkKTubotbq0r6X8a72WsrTE7tqII0kuaLtcyk55MUH6Icw9dSloJW3Rdeo4pE3G/eyV1KmIOC+oTgYEAujLwWSXyr1Ui78y6ieKQf0HKmiSEmm1ZGJGfa/IwR80/icQQLOVSKs1UXsMlWDv106v/uXLZlRjmt2bjAiyrNVkcw7vE2Dzf1LtAAImQn3AAAAAAElFTkSuQmCC"/>
-                                  </svg>
-                                  </a></li>
+                                <li class="footer__social-item"><a class="footer__social-link" href="#"><svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" width="37" height="38"
+                                            viewBox="0 0 37 38">
+                                            <image id="social-media-logos-white-png-2" width="37" height="38"
+                                                xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACUAAAAmCAYAAABDClKtAAABv0lEQVRYhe2YPUvDQBiAn2hrFerXoi7tIuJfEBwFEVztooijIIIOTv4Il3YS3HTyD4ijm5u6SB0FEcShgrValcrZi6R5+5Hk2jRIHyhJ37s0T3OX997ESq1kK0SLfEzrfAOvXVZLAINAyZa6AZZEt3DZAfbVGW2pMvDUDZP70+3fbTqTe7FjfXprid7h0++WihSxNsksAstAChhxXP08sCV6t8BUSt0tR8CqaKkyKSIeMB2+vSZCipKIdFhK5ZV1Ea1lWEQ8YDJ8Y8CUiMI5cKH3H0Vrh6WsOle6AKwBz6K3D9qdEsp6yTLCROpdRKp8iohPggyfmtwbeqIPudrGgTPgQ//ha2BX/EILgkjNAgsiWiUOzDu+F0UPDwQZvrKINOauYUsTgkglRKQxoaWEY+AKGAWyeqmxKeg5VNQp41Ic3SGpW/1JAgcuKXVHngBf4igfmKSEZJ06zAq6tDiJZD3Vk/JKT8orPSmv/DspSydQJ/USqm9MymH1mL0JDDhib0HLFScmUkrgUETbQKTnlHGx3wb+an57+Cb0o1HopDM5+5RzbqlpXbxFgbiSetAi3X5HZb97fVBSM12WqQUqP0ObO90vznxtAAAAAElFTkSuQmCC" />
+                                        </svg>
+                                    </a></li>
+                                <li class="footer__social-item"><a class="footer__social-link" href="#"><svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" width="96" height="38"
+                                            viewBox="0 0 96 38">
+                                            <image id="social-media-logos-white-png-2_копия"
+                                                data-name="social-media-logos-white-png-2 копия" width="96" height="38"
+                                                xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAAAmCAYAAAA7mZ5JAAAFK0lEQVRoge2be4gVVRzHP3fdcrUStpc92Moik17SA6SHlWYFW9hLspQsiaAi0iyodqMsav+wco0KIYssKqInRUVL2gsT7G0SFLQuVvTQDbGXWu1uHO534uw5M3Nn7r07d5a9H7jM3HPOnXPm/Ob8XmduoWXWQ4+RL74D7q7yiFqAO73S2nOXEcBAzgb1LXC4V1oZJwCfZH0jCTixUW22Au/XeDATgSOBP7yayumzrvAO8FtWNxXCOGC6ivsCAXwNXOi3zZSbgPsz6PBqYKNXmh2HAt1Bbw06jqrhgAJ29UqGhrE1uDebQf03eNV1MqUxZWfjgT10nsR4F4CdwBZgh1dbJ5EAxgDXAJcBh+l7Gv6RALqATnk5dUQpARwAvACc7NUkZ4ws/3XAbOBK4PW6AIrECcAYxeesye8F3lOglDR26Af2BKYARwN76ZqnAOu91iOQOAHMBabq/EPgcqDHa5WcDuA2YDfgXuC8kT75lPCC5uj4u9RGOZNvVM5nwO1Am4Igw5nAwV7rfNNgfapG1ApoAibofH0Jw9msyTQq60fgB6tuMTAJOA64D3hJUWCTDPom72rZcwxwvNSqmdztslF/aiRGXS4DdlGbgtosBNY5oz0X2F+Rd0Ht1wLfRN1VlABG62P4xast0iKVcr6MNVotpsMletqfAG4B3pI31Gv9fnfvirXBrPRbnZ4fAa7X+UZFrrOdNq2OAM6OcC6M8G70SkWS5VTwSorJrTXAtdbkoxjhHGCVOl2iFTBXBtkWeF6SgCv04NjMt1TkT7JfLu74F3otiivhKa/Uohx9to9UyUH6vkGp3puB11RmhLYUmKkYIM+YJ3ylM76xzoRuCwkkbQGcqhXg8jDwuVdaoQAWWE/H08BJyt8/IHU038o+dliqLM90Wjo/wASfk63v/U59IICCvDo3n/YF0F7qntMKwBiii3Teo+DKHfhK6X7DUTJweafHGnOAcRQetOapKeIezCSf5pSZlPoVIXPjkVYAewMH6vztEN0Z8KJ1foRXm086QtTl6TKiV4XM1QwZ6sVO+YDU15dJ7jLKCxqJGGN7B7DcufcFEXMx1QpUbT4AHvdKI0i7Anrl6xvOinElZ1nnkT5wDnlUHlwlmDhg36ESgPHlX9b5BPnL7gbHPBliw1eKhIcL/TK+vRWM12ytvmmp6ljK8YKWWRHsPAVe7fL7XwGetDyCNu0HDCe6lXr/u8SYja5/N8IOmjjpDWA/r8ahHAEYQ3WxsqLIVbtHfv8F1uAWWXHBcGOVko9xXsxapVVaFSe4TFbmN9YNTyKAsIj1UwUfyy2bgJ6GLnkInd6vBvvSYRF2nngemBbztsgGHdcoTREmLONF3eCVWkR5QTst1THeqy3yveKA9phknIu9JIfi9ZNq8zFwhrK3rUrcNcsWvmr11aU2bdL9A1YyLtaeRAlgh4ITk7E8Vsdur1WRrfokYaZ1/ajr5ZHV+sSxTpmAVMSpoGd1HKco8RCvRXJGK1yfpl+szkkquuZErQDDM3Ing4DjI1n9TdYSK0W/tiGnaPkiXVkyRzJSiBOAccMutTblTRb0Eq9VOn7V7lp9P1jECQAZ1RkKTubotbq0r6X8a72WsrTE7tqII0kuaLtcyk55MUH6Icw9dSloJW3Rdeo4pE3G/eyV1KmIOC+oTgYEAujLwWSXyr1Ui78y6ieKQf0HKmiSEmm1ZGJGfa/IwR80/icQQLOVSKs1UXsMlWDv106v/uXLZlRjmt2bjAiyrNVkcw7vE2Dzf1LtAAImQn3AAAAAAElFTkSuQmCC" />
+                                        </svg>
+                                    </a></li>
                             </ul>
                         </div>
                         <p class="footer__privacy">
