@@ -101,6 +101,7 @@ body {
 .header__btn,
 .footer__btn {
     padding: 15px 40px;
+    font-weight: 500;
     background-color: #ffba00;
     border: none;
     outline: none;
@@ -504,8 +505,267 @@ body {
 .info__text-item:last-child {
     margin-bottom: 0;
 }
+.reviews {
+    padding: 40px 0 45px;
+    color: #303539;
+}
+.reviews__inner {
+    display: flex;
+    justify-content: space-between;
+}
+.reviews__docs {
+    max-width: 480px;
+    margin-right: 20px;
+}
+.reviews__docs-title,
+.reviews__reviews-title {
+    text-align: center;
+    font-size: 30px;
+    line-height: 24px;
+    font-weight: 400;
+    margin-bottom: 75px;
+}
+.reviews__docs-item {
+    font-size: 16px;
+    line-height: 36px;
+    margin-bottom: 16px;
+    position: relative;
+    padding-left: 30px;
+    padding-bottom: 0;
+}
+.reviews__docs-item:before {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 21px;
+    top: 8px;
+    left: -30px;
+    background-image: url('../images/icons/reviews-list.png');
+}
+.reviews__docs-item {
+    border-bottom: 1px dashed #33659e;
+    padding: 0 7px;
+}
+.reviews__docs-link {
+    width: 100%;
+}
+.reviews__items {
+    max-width: 480px;
+}
+.reviews__item {
+    background-image: url('../images/reviews-bg.png');
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+.reviews__item-img {
+    margin-left: 175px;
+}
+.reviews__item-text {
+    line-height: 22px;
+    font-size: 14px;
+    margin-top: 0;
+}
+.slick-arrow {
+    position: absolute;
+    display: inline-block;
+    top: 30%;
+    left: 0;
+    font-size: 0;
+    background: transparent;
+    border: none;   
+}
+.slick-prev {
+    width: 19px;
+    position: absolute;
+    left: -25px;
+    cursor: pointer;
+}
+.slick-next {
+    position: absolute;
+    right: -100%;
+    cursor: pointer;
+}
+.header__top {
+    background-image: url('../images/header__bg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 30px 0 20px;
+}
+.header__top-link {
+    display: flex;
+    align-items: center;
+}
+.header__menu {
+    padding-left: 0;
+}
+.header__top-img {
+    margin-right: 6px;
+}
+.header__top-text {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 10px 15px;
+    background-color: #1d5493;
+}
 
+.faq {
+    padding: 50px 0 70px;
+}
+.title {
+    font-size: 28px;
+    color: #3d4245;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+.faq__list {
+    max-width: 640px;
+}
+.faq__item {
+    font-size: 16px;
+    font-weight: 500;
+    color: #303539;
+    padding-left: 30px;
+    margin-bottom: 55px;
+    position: relative;
+}
+.faq__item:last-child {
+    margin-bottom: 0;
+}
+.faq__item:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -40px;
+    width: 45px;
+    height: 45px;
+    background-image: url('../images/icons/faq-icon.png');
+}
+.docs {
+    padding: 50px 0 130px;
+}
+.docs__title {
+    margin-bottom: 10px;
+}
+.docs__descr {
+    padding: 20px 35px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #1d5493;
+    margin-bottom: 50px;
+    max-width: 590px;
+}
+.docs__list-item {
+    margin-bottom: 15px;
+    position: relative;
+}
+.docs__list-item:before {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 21px;
+    background-image: url('../images/icons/reviews-list.png');
+    top: 5px;
+    left: -40px;
+}
+.docs__list-link {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 36px;
+    color: #303539;
+    padding-bottom: 5px;
+    border-bottom: 1px dashed #1d5493;
+}
+.contacts {
+    padding: 50px 0 30px;
+}
 
+.contacts__title {
+    margin-bottom: 20px;
+}
+
+.contacts__descr {
+    font-weight: 500;
+    font-size: 16px;
+    color: #303539;
+    max-width: 570px;
+    margin-bottom: 35px;
+}
+.contacts__address {
+    font-weight: 500;
+    font-size: 16px;
+    color: #303539;
+    margin-bottom: 45px;
+}
+.contacts__phone {
+    padding-left: 30px;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 30px;
+    position: relative;
+}
+.contacts__phone:before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 0;
+    width: 15px;
+    height: 15px;
+    background-image: url(../images/icons/phone.png);
+}
+.contacts__phone:last-child {
+    margin-bottom: 0px;
+}
+.contacts__form {
+    margin: 75px 0 0;
+    max-width: 365px;
+}
+.contacts__form-title {
+    margin: 0 0 55px;
+}
+.contacts__form-input {
+    padding: 12px 18px;
+    border: 1px solid #303539;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    width: 365px;
+}
+.contacts__form-input::placeholder{
+    font-size: 18px;
+    font-weight: 400;
+    color: #303539;
+}
+.contacts__form-text {
+    font-size: 14px;
+    font-weight: 500;
+    color: #303539;
+    margin-left: 5px;
+    margin-bottom: 20px;
+}
+.contacts__btn {
+    display: block;
+    margin-left: auto;
+    font-weight: bold;
+    margin-top: 20px;
+    text-transform: uppercase;
+    background-color: #ffba00;
+    padding: 10px 50px;
+    border: 3px solid #fff;
+    border-radius: 17px;
+    box-shadow: 0px 10px 20px 0px rgba(87, 98, 110, 0.75);
+    cursor: pointer;
+    transition: all .3s;
+}
+.contacts__btn:hover {
+    box-shadow: none;
+}
+.map iframe {
+    width: 100%;
+    min-height: 600px;
+    margin-bottom: -1px;
+}
 
 
 
